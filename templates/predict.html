@@ -1,0 +1,47 @@
+{% extends 'header.html' %}
+
+{% block head %}
+
+
+<title>Housing Estimator</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6 col-sm-12 col-xs-6 col-lg-6">
+
+
+        <form action="/predict" method="post">
+            <legend>CreditDefault Estimation Form</legend>
+
+            <div class="mb-3">
+                <label class="form-label">Age</label>
+                <input class="form-control" type="text" name="Age" placeholder="Enter a value of Age"
+                    required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">EstimatedSalary</label>
+                <input class="form-control" type="text" name="EstimatedSalary" placeholder="Enter a value of EstimatedSalary"
+                    required />
+
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Predict Median House Value" required />
+            </div>
+
+        </form>
+    </div>
+
+    <div class="col-md-6 col-sm-12 col-xs-6 col-lg-6">
+        <div class="card">
+            <div class="card-header">
+              Credit Default :Banking
+            </div>
+            <div class="card-body">
+
+        Go to <a href="/" class="btn btn-primary">Home</a>
+    </div>
+</div>
+    </div>
+
+    {% endblock %}
