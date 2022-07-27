@@ -54,9 +54,5 @@ jobs:
           # For more information look at https://devcenter.heroku.com/articles/process-model
           process_type: web
           
-           # Kaggle credentials as environment variables
-        env:
-          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
-          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           
 ### ⬆ IMPORTANT PART ⬆ ###

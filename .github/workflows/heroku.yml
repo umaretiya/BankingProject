@@ -12,18 +12,20 @@ jobs:
       - name: Build, Push and Release a Docker container to Heroku. #set the whatever name you want to this step
         id: heroku
         uses: jctaveras/heroku-deploy@v1.0.0  # use the latest version of the action
+        
         with:
           email: ${{ secrets.HEROKU_EMAIL }} # your heroku email
           api_key: ${{ secrets.HEROKU_API_KEY }} # your  heroku api key
           app_name: ${{ secrets.HEROKU_APP_NAME }} # you aplication name
+          dockerfile: Dockerfile
 
-          dockerfile_directory: ./
+          # dockerfile_directory: ./
+          # dockerfile_name: Dockerfile
+          # docker_options: "--no-cache"
           # (Optional, default: "Dockerfile")
           # Dockerfile name.
-          dockerfile_name: Dockerfile
           # (Optional, default: "")
           # Additional options of docker build command.
-          docker_options: "--no-cache"
           # dockerfile_path: ./ # set the path to the folder wher the Dokerfile is located
           #options: Dockerfile # Docker Build Options
           #formation: web # Docker Dyno Formation. By default is web
