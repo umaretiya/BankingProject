@@ -1,8 +1,9 @@
-# MLops_classifcation
+# ML_classifcation :Credit Default predictions-Banking Sector
 
 
-[repo link]("https://github.com/umaretiya")
-
+[git link]("https://github.com/umaretiya/BankingProject")
+[git repo link]("https://github.com/umaretiya/BankingProject.git")
+[heroku app-link]("https://ml-classify.herokuapp.com/")
 Create first flask classifciation  machine learning project
 ```{link of repo}
 [repo link](https://github.com/umaretiya)
@@ -19,15 +20,16 @@ docker build -t <image name>:<tag name> .
 python -m pip install --upgrade pip'
 
 docker image flask_app and credit_card
-docker image build -t <flask_docker> . # credit_card 756ea058aa15  //for docker <doker_banking>
+docker image build -t <flask_docker> . # credit_card  //for docker <doker_banking>
 docker run -p 5000:5000 -d <flask_docker> 
-docker run --name flask1 -dit -p 5000:5000 flask_app
-docker run -p 5000:5000 -e PORT=5000 756ea058aa15
+docker run --name flask1 -dit -p 5000:5000 a5f9c7a9a19f
+docker run -p 5000:5000 -e PORT=5000 a5f9c7a9a19f
 
 docker ps
 docker stop <container_id>
 docker login
 ##### renaming docker images
+credit_card
 docker tag flask_docker <your-docker-hub-username>/<flask-docker>
 
 docker push <your-docker-hub-username>/<flask-docker>
