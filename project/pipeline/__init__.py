@@ -169,6 +169,7 @@ class Pipeline(Thread):
     def run(self):
         try:
             self.run_pipeline()
+            logging.info(f"Pipeline run function called inside run()")
         except Exception as e:
             raise e
             
@@ -186,7 +187,7 @@ class Pipeline(Thread):
                     })
                 
                 experiment_report = pd.DataFrame(experiment_dict)
-                
+                logging.info(f"Experiment report saved in dataframe")
                 os.makedirs(os.path.dirname(Pipeline.experiment_file_path), exist_ok=True)
                 if os.path.exists(Pipeline.experiment_file_path):
                     experiment_report.to_csv(Pipeline.experiment_file_path, mode="a", index=False, header=False)
@@ -207,6 +208,7 @@ class Pipeline(Thread):
             if os.path.exists(Pipeline.experiment_file_path):
                 df = pd.read_csv(Pipeline.experiment_file_path)
                 limit = -1 * int(limit)
+                logging.info(f"Experiment history saved and called")
                 return df[limit:].drop(columns=["experiment_file_path", "initialization_timestamp"], axis=1)
             else:
                 return pd.DataFrame()

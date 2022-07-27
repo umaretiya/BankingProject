@@ -2,7 +2,7 @@ from flask import Flask, render_template,request,abort, send_file
 from project.utils import read_yaml, write_yaml, load_numpy_array
 from project.logger import logging, get_log_dataframe
 from project.configured import Configuration
-from project.constant import ROOT_DIR, CONFIG_DIR,CONFIG_FILE_PATH,CURRENT_TIME_STAMP
+from project.constant import *
 from project.pipeline import Pipeline
 
 from project.model.estimator_model import ProjectEstimatorModel
@@ -67,9 +67,13 @@ def render_artifact_dir(req_path):
 
 @app.route('/view_experiment_list', methods=['GET','POST'])
 def view_experiment_history():
-    experiment_df = Pipeline.get_experiments_status()
-    context= {
-        "experiment": experiment_df.to_html(classes='table table-striped col-12')
+    config=Configuration(current_time_stamp=get_current_time_stamp())
+    experiment_file_path=os.path.join(config.training_pipeline_config.artifact_dir,EXPERIMENT_DIR_NAME, EXPERIMENT_FILE_NAME)
+    df = pd.read_csv(experiment_file_path)
+    df = df[-10:].drop(columns=["experiment_file_path", "initialization_timestamp"], axis=1)
+    
+    context = {
+        "experiment": df.to_html(classes='table table-striped col-12')
     }
     return render_template("experiment_history.html", context=context)
 
@@ -265,4 +269,5 @@ def render_log_dir(req_path):
     return render_template('log_files.html', result=result)  
 
 if __name__ == "__main__":
-    app.run(debug=True,port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host="0.0.0.0", debug=True,port=port)

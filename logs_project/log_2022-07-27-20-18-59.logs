@@ -1,0 +1,10 @@
+[2022-07-27 20:19:05,122]^;WARNING^;224^;_internal.py^;_log()^; * Debugger is active!
+[2022-07-27 20:19:05,154]^;INFO^;224^;_internal.py^;_log()^; * Debugger PIN: 516-850-246
+[2022-07-27 20:19:05,304]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:19:05] "GET / HTTP/1.1" 200 -
+[2022-07-27 20:19:05,319]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:19:05] "GET / HTTP/1.1" 200 -
+[2022-07-27 20:19:07,082]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:19:07] "GET / HTTP/1.1" 200 -
+[2022-07-27 20:19:08,444]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:19:08] "GET / HTTP/1.1" 200 -
+[2022-07-27 20:19:09,855]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:19:09] "GET /logs HTTP/1.1" 200 -
+[2022-07-27 20:19:10,966]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:19:10] "GET /artifact HTTP/1.1" 200 -
+[2022-07-27 20:19:13,166]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:19:13] "[33mGET /view_experiment_hist HTTP/1.1[0m" 404 -
+[2022-07-27 20:19:31,514]^;INFO^;224^;_internal.py^;_log()^; * Detected change in 'D:\\PycharmProjects\\DS_ML_Self\\BankingProject\\app.py', reloading

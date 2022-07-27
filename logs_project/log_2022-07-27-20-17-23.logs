@@ -1,0 +1,12 @@
+[2022-07-27 20:17:31,005]^;WARNING^;224^;_internal.py^;_log()^; * Debugger is active!
+[2022-07-27 20:17:31,087]^;INFO^;224^;_internal.py^;_log()^; * Debugger PIN: 516-850-246
+[2022-07-27 20:17:31,379]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:17:31] "GET / HTTP/1.1" 200 -
+[2022-07-27 20:17:33,607]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:17:33] "GET /artifact HTTP/1.1" 200 -
+[2022-07-27 20:17:34,888]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:17:34] "GET /artifact/project/artifact HTTP/1.1" 200 -
+[2022-07-27 20:17:36,019]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:17:36] "GET /artifact/project/artifact/data_ingestion HTTP/1.1" 200 -
+[2022-07-27 20:17:36,721]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:17:36] "GET /artifact/project/artifact/data_ingestion/2022-07-27-12-54-14 HTTP/1.1" 200 -
+[2022-07-27 20:17:37,435]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:17:37] "GET /artifact/project/artifact/data_ingestion/2022-07-27-12-54-14/ingested_data HTTP/1.1" 200 -
+[2022-07-27 20:17:38,181]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:17:38] "GET /artifact/project/artifact/data_ingestion/2022-07-27-12-54-14/ingested_data/test HTTP/1.1" 200 -
+[2022-07-27 20:17:42,117]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:17:42] "GET /artifact HTTP/1.1" 200 -
+[2022-07-27 20:17:43,880]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:17:43] "[33mGET /view_experiment_hist HTTP/1.1[0m" 404 -
+[2022-07-27 20:18:23,057]^;INFO^;224^;_internal.py^;_log()^; * Detected change in 'D:\\PycharmProjects\\DS_ML_Self\\BankingProject\\app.py', reloading

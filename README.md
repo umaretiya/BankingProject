@@ -18,15 +18,16 @@ docker build -t <image name>:<tag name> .
 ```
 python -m pip install --upgrade pip'
 
-docker image build -t <flask_docker> . # credit_card 756ea058aa15
+docker image flask_app and credit_card
+docker image build -t <flask_docker> . # credit_card 756ea058aa15  //for docker <doker_banking>
 docker run -p 5000:5000 -d <flask_docker> 
-
+docker run --name flask1 -dit -p 5000:5000 flask_app
 docker run -p 5000:5000 -e PORT=5000 756ea058aa15
 
 docker ps
 docker stop <container_id>
 docker login
-# renaming docker images
+##### renaming docker images
 docker tag flask_docker <your-docker-hub-username>/<flask-docker>
 
 docker push <your-docker-hub-username>/<flask-docker>
@@ -38,7 +39,10 @@ heroku container:push web --app <app-name>
 heroku container:release web --app <app-name>
 > Note: imagename fro docker must be lowercase
 
-directory: 'D:\\PycharmProjects\\DS_ML_Self\\BankingProject\\project\\artifact\\model_trainer\\2022-07-27-13-14-55\\trained_model\\model.pkl']
+heroku container:push web -a <name heroku app>
+heroku container:release web -a <name heroku app>
+heroku open -a <name heroku app>
+heroku logs --tail -a <name heroku app>
 
 
 To list docker image
@@ -76,7 +80,7 @@ git push -u origin main
 ###
 git config --global core.compression 0
 git clone --depth 1 <repo_URI>
-# cd to your newly created directory
+##### cd to your newly created directory
 git fetch --unshallow 
 git pull --all
 

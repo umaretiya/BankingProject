@@ -1,0 +1,7 @@
+[2022-07-27 20:37:37,406]^;WARNING^;224^;_internal.py^;_log()^; * Debugger is active!
+[2022-07-27 20:37:37,419]^;INFO^;224^;_internal.py^;_log()^; * Debugger PIN: 516-850-246
+[2022-07-27 20:37:43,001]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:37:43] "GET / HTTP/1.1" 200 -
+[2022-07-27 20:37:49,487]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:37:49] "GET / HTTP/1.1" 200 -
+[2022-07-27 20:37:51,263]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:37:51] "[33mGET /view_experiment_hist HTTP/1.1[0m" 404 -
+[2022-07-27 20:37:54,149]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:37:54] "[33mGET /view_experiment_hist HTTP/1.1[0m" 404 -
+[2022-07-27 20:38:10,100]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:38:10] "[33mGET /view_experiment_hist HTTP/1.1[0m" 404 -

@@ -1,0 +1,6 @@
+[2022-07-27 20:31:46,470]^;WARNING^;224^;_internal.py^;_log()^; * Debugger is active!
+[2022-07-27 20:31:46,479]^;INFO^;224^;_internal.py^;_log()^; * Debugger PIN: 516-850-246
+[2022-07-27 20:32:02,373]^;INFO^;232^;__init__.py^;get_trainig_pipeline_config()^;Configuaraion: Training pipeline configured
+[2022-07-27 20:32:02,374]^;INFO^;19^;__init__.py^;__init__()^;Configuaraion initiated
+[2022-07-27 20:32:02,405]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:32:02] "GET / HTTP/1.1" 200 -
+[2022-07-27 20:32:44,155]^;INFO^;224^;_internal.py^;_log()^; * Detected change in 'D:\\PycharmProjects\\DS_ML_Self\\BankingProject\\demo_01.py', reloading

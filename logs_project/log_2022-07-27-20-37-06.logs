@@ -1,0 +1,6 @@
+[2022-07-27 20:37:09,422]^;WARNING^;224^;_internal.py^;_log()^; * Debugger is active!
+[2022-07-27 20:37:09,432]^;INFO^;224^;_internal.py^;_log()^; * Debugger PIN: 516-850-246
+[2022-07-27 20:37:09,489]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:37:09] "GET / HTTP/1.1" 200 -
+[2022-07-27 20:37:14,981]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:37:14] "GET /artifact HTTP/1.1" 200 -
+[2022-07-27 20:37:16,228]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:37:16] "GET /artifact/project/artifact HTTP/1.1" 200 -
+[2022-07-27 20:37:19,789]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:37:19] "[33mGET /view_experiment_hist HTTP/1.1[0m" 404 -

@@ -1,0 +1,60 @@
+[2022-07-27 19:48:05,358]^;WARNING^;224^;_internal.py^;_log()^; * Debugger is active!
+[2022-07-27 19:48:05,422]^;INFO^;224^;_internal.py^;_log()^; * Debugger PIN: 516-850-246
+[2022-07-27 19:48:08,911]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:48:08] "GET /logs HTTP/1.1" 200 -
+[2022-07-27 19:48:12,976]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:48:12] "GET /artifact HTTP/1.1" 200 -
+[2022-07-27 19:48:14,146]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:48:14] "GET /saved_models HTTP/1.1" 200 -
+[2022-07-27 19:48:16,315]^;INFO^;232^;__init__.py^;get_trainig_pipeline_config()^;Configuaraion: Training pipeline configured
+[2022-07-27 19:48:16,316]^;INFO^;19^;__init__.py^;__init__()^;Configuaraion initiated
+[2022-07-27 19:48:16,316]^;INFO^;60^;__init__.py^;get_data_ingestion_config()^;Configuaraion: Data ingestion_configured
+[2022-07-27 19:48:16,316]^;INFO^;94^;__init__.py^;get_data_validation_config()^;Configuaraion: Data validation configured
+[2022-07-27 19:48:16,316]^;INFO^;138^;__init__.py^;get_data_transformation_config()^;Configuaraion: Transformation configured
+[2022-07-27 19:48:16,316]^;INFO^;175^;__init__.py^;get_model_trainer_config()^;Configuaraion: Modeltrainign configured
+[2022-07-27 19:48:24,309]^;INFO^;42^;transformation.py^;get_data_transformer_object()^;Preprocessing object Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())]) configured
+[2022-07-27 19:48:24,920]^;INFO^;42^;transformation.py^;get_data_transformer_object()^;Preprocessing object Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())]) configured
+[2022-07-27 19:48:26,430]^;INFO^;108^;ingestion.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Ingestion log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 19:48:26,430]^;INFO^;144^;validation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Valdaition log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 19:48:26,430]^;INFO^;116^;transformation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Transformation log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 19:48:26,432]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:48:26] "GET /predict HTTP/1.1" 200 -
+[2022-07-27 19:48:32,836]^;INFO^;232^;__init__.py^;get_trainig_pipeline_config()^;Configuaraion: Training pipeline configured
+[2022-07-27 19:48:32,836]^;INFO^;19^;__init__.py^;__init__()^;Configuaraion initiated
+[2022-07-27 19:48:32,981]^;INFO^;60^;__init__.py^;get_data_ingestion_config()^;Configuaraion: Data ingestion_configured
+[2022-07-27 19:48:33,082]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:48:33] "GET /train HTTP/1.1" 200 -
+[2022-07-27 19:48:34,893]^;INFO^;232^;__init__.py^;get_trainig_pipeline_config()^;Configuaraion: Training pipeline configured
+[2022-07-27 19:48:34,894]^;INFO^;19^;__init__.py^;__init__()^;Configuaraion initiated
+[2022-07-27 19:48:34,954]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:48:34] "GET /train HTTP/1.1" 200 -
+[2022-07-27 19:48:36,581]^;INFO^;108^;ingestion.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Ingestion log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 19:48:36,581]^;INFO^;94^;__init__.py^;get_data_validation_config()^;Configuaraion: Data validation configured
+[2022-07-27 19:48:36,694]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:48:36] "GET /update_model_config HTTP/1.1" 200 -
+[2022-07-27 19:48:42,993]^;INFO^;144^;validation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Valdaition log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 19:48:42,994]^;INFO^;138^;__init__.py^;get_data_transformation_config()^;Configuaraion: Transformation configured
+[2022-07-27 19:48:42,999]^;INFO^;42^;transformation.py^;get_data_transformer_object()^;Preprocessing object Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())]) configured
+[2022-07-27 19:48:43,891]^;INFO^;116^;transformation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Transformation log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 19:48:43,891]^;INFO^;175^;__init__.py^;get_model_trainer_config()^;Configuaraion: Modeltrainign configured
+[2022-07-27 19:48:46,478]^;INFO^;172^;model_factory.py^;execute_grid_search_operation()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> f'Training LogisticRegression completed.' <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-27 19:48:55,175]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:48:55] "[33mGET /view_experiment_hist HTTP/1.1[0m" 404 -
+[2022-07-27 19:49:31,102]^;INFO^;172^;model_factory.py^;execute_grid_search_operation()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> f'Training RandomForestClassifier completed.' <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-07-27 19:49:31,108]^;INFO^;43^;training.py^;initiate_model_trainer()^;Best model found on training data: GridSearchedBestModel(model_serial_number='module_1', model=RandomForestClassifier(min_samples_leaf=3), best_model=RandomForestClassifier(min_samples_leaf=6), best_parameters={'min_samples_leaf': 6}, best_score=0.8186666666666665)
+[2022-07-27 19:49:32,400]^;INFO^;76^;training.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model trainer log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-27 19:49:32,401]^;INFO^;196^;__init__.py^;get_model_evaluation_config()^;Configuaraion: Model Evaluated configured
+[2022-07-27 19:49:32,669]^;INFO^;141^;evaluation.py^;__del__()^;====================Model Evaluation log completed.==================== 
+[2022-07-27 19:49:32,669]^;INFO^;216^;__init__.py^;get_model_pusher_config()^;Configuaraion: Model pusher configured
+[2022-07-27 19:49:32,672]^;INFO^;47^;model_pusher.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model Pusher log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-27 19:49:32,673]^;INFO^;142^;__init__.py^;run_pipeline()^;Model pusher: ModelPusherArtifact(is_model_pusher=True, export_model_file_path='D:\\PycharmProjects\\DS_ML_Self\\BankingProject\\saved_models\\20220727194932\\model.pkl')
+[2022-07-27 19:49:32,673]^;INFO^;145^;__init__.py^;run_pipeline()^;Pipeline completed.
+[2022-07-27 19:52:43,960]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:52:43] "[33mGET /view_experiment_hist HTTP/1.1[0m" 404 -
+[2022-07-27 19:55:26,901]^;INFO^;224^;_internal.py^;_log()^; * Detected change in 'D:\\PycharmProjects\\DS_ML_Self\\BankingProject\\app.py', reloading

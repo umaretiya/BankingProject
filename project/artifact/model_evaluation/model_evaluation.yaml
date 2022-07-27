@@ -1,5 +1,5 @@
 best_model:
-  model_path: D:\PycharmProjects\DS_ML_Self\BankingProject\project\artifact\model_trainer\2022-07-27-13-14-55\trained_model\model.pkl
+  model_path: D:\PycharmProjects\DS_ML_Self\BankingProject\project\artifact\model_trainer\2022-07-27-19-56-08\trained_model\model.pkl
 history:
   2022-07-27-12-54-14:
     model_path: D:\PycharmProjects\DS_ML_Self\BankingProject\project\artifact\model_trainer\2022-07-27-12-54-14\trained_model\model.pkl
@@ -9,3 +9,9 @@ history:
     model_path: D:\PycharmProjects\DS_ML_Self\BankingProject\project\artifact\model_trainer\2022-07-27-13-01-56\trained_model\model.pkl
   2022-07-27-13-14-55:
     model_path: D:\PycharmProjects\DS_ML_Self\BankingProject\project\artifact\model_trainer\2022-07-27-13-04-17\trained_model\model.pkl
+  2022-07-27-19-17-55:
+    model_path: D:\PycharmProjects\DS_ML_Self\BankingProject\project\artifact\model_trainer\2022-07-27-13-14-55\trained_model\model.pkl
+  2022-07-27-19-48-01:
+    model_path: D:\PycharmProjects\DS_ML_Self\BankingProject\project\artifact\model_trainer\2022-07-27-19-17-55\trained_model\model.pkl
+  2022-07-27-19-56-08:
+    model_path: D:\PycharmProjects\DS_ML_Self\BankingProject\project\artifact\model_trainer\2022-07-27-19-48-01\trained_model\model.pkl

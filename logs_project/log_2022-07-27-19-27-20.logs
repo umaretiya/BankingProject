@@ -1,0 +1,5 @@
+[2022-07-27 19:27:26,921]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:27:26] "GET / HTTP/1.1" 200 -
+[2022-07-27 19:27:26,946]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:27:26] "GET /logs HTTP/1.1" 200 -
+[2022-07-27 19:27:29,915]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:27:29] "GET / HTTP/1.1" 200 -
+[2022-07-27 19:27:31,854]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 19:27:31] "[33mGET /view_experiment_hist HTTP/1.1[0m" 404 -
+[2022-07-27 19:28:01,768]^;INFO^;224^;_internal.py^;_log()^; * Detected change in 'D:\\PycharmProjects\\DS_ML_Self\\BankingProject\\app.py', reloading

@@ -50,7 +50,7 @@ class DataTransformation:
             #     ("num_pipeline", num_pipeline, numerical_columns),
             #     ("cat_pipeline", cat_pipeline, categorical_columns),
             #     ]) 
-            return StandardScaler()
+            return num_pipeline
         except Exception as e:
             raise ProjectException(e, sys) from e 
         

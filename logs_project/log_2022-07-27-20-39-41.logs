@@ -1,0 +1,50 @@
+[2022-07-27 20:39:46,256]^;WARNING^;224^;_internal.py^;_log()^; * Debugger is active!
+[2022-07-27 20:39:46,318]^;INFO^;224^;_internal.py^;_log()^; * Debugger PIN: 516-850-246
+[2022-07-27 20:40:01,405]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:40:01] "GET / HTTP/1.1" 200 -
+[2022-07-27 20:40:06,512]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:40:06] "GET /saved_models HTTP/1.1" 200 -
+[2022-07-27 20:40:08,338]^;INFO^;232^;__init__.py^;get_trainig_pipeline_config()^;Configuaraion: Training pipeline configured
+[2022-07-27 20:40:08,339]^;INFO^;19^;__init__.py^;__init__()^;Configuaraion initiated
+[2022-07-27 20:40:08,340]^;INFO^;60^;__init__.py^;get_data_ingestion_config()^;Configuaraion: Data ingestion_configured
+[2022-07-27 20:40:08,340]^;INFO^;94^;__init__.py^;get_data_validation_config()^;Configuaraion: Data validation configured
+[2022-07-27 20:40:08,341]^;INFO^;138^;__init__.py^;get_data_transformation_config()^;Configuaraion: Transformation configured
+[2022-07-27 20:40:08,341]^;INFO^;175^;__init__.py^;get_model_trainer_config()^;Configuaraion: Modeltrainign configured
+[2022-07-27 20:40:11,031]^;INFO^;232^;__init__.py^;get_trainig_pipeline_config()^;Configuaraion: Training pipeline configured
+[2022-07-27 20:40:11,032]^;INFO^;19^;__init__.py^;__init__()^;Configuaraion initiated
+[2022-07-27 20:40:11,083]^;INFO^;190^;__init__.py^;save_experiment()^;Experiment report saved in dataframe
+[2022-07-27 20:40:11,236]^;INFO^;211^;__init__.py^;get_experiments_status()^;Experiment history saved and called
+[2022-07-27 20:40:11,265]^;INFO^;60^;__init__.py^;get_data_ingestion_config()^;Configuaraion: Data ingestion_configured
+[2022-07-27 20:40:11,320]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:40:11] "GET /train HTTP/1.1" 200 -
+[2022-07-27 20:40:12,868]^;INFO^;232^;__init__.py^;get_trainig_pipeline_config()^;Configuaraion: Training pipeline configured
+[2022-07-27 20:40:12,870]^;INFO^;19^;__init__.py^;__init__()^;Configuaraion initiated
+[2022-07-27 20:40:12,974]^;INFO^;211^;__init__.py^;get_experiments_status()^;Experiment history saved and called
+[2022-07-27 20:40:12,988]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:40:12] "GET /train HTTP/1.1" 200 -
+[2022-07-27 20:40:15,144]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:40:15] "[33mGET /view_experiment_hist HTTP/1.1[0m" 404 -
+[2022-07-27 20:40:15,357]^;INFO^;108^;ingestion.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Ingestion log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 20:40:15,357]^;INFO^;94^;__init__.py^;get_data_validation_config()^;Configuaraion: Data validation configured
+[2022-07-27 20:40:25,044]^;INFO^;144^;validation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Valdaition log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 20:40:25,045]^;INFO^;138^;__init__.py^;get_data_transformation_config()^;Configuaraion: Transformation configured
+[2022-07-27 20:40:25,071]^;INFO^;42^;transformation.py^;get_data_transformer_object()^;Preprocessing object Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())]) configured
+[2022-07-27 20:40:25,150]^;INFO^;42^;transformation.py^;get_data_transformer_object()^;Preprocessing object Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())]) configured
+[2022-07-27 20:40:26,072]^;INFO^;116^;transformation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Transformation log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 20:40:26,073]^;INFO^;175^;__init__.py^;get_model_trainer_config()^;Configuaraion: Modeltrainign configured
+[2022-07-27 20:40:26,396]^;INFO^;76^;training.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Model trainer log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2022-07-27 20:40:26,462]^;INFO^;42^;transformation.py^;get_data_transformer_object()^;Preprocessing object Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())]) configured
+[2022-07-27 20:40:28,239]^;INFO^;108^;ingestion.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Ingestion log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 20:40:28,239]^;INFO^;144^;validation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Valdaition log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 20:40:28,239]^;INFO^;116^;transformation.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Transformation log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2022-07-27 20:40:28,241]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 20:40:28] "GET /predict HTTP/1.1" 200 -

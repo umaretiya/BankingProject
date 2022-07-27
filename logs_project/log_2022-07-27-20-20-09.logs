@@ -1,0 +1,3 @@
+[2022-07-27 20:20:15,648]^;WARNING^;224^;_internal.py^;_log()^; * Debugger is active!
+[2022-07-27 20:20:15,663]^;INFO^;224^;_internal.py^;_log()^; * Debugger PIN: 516-850-246
+[2022-07-27 20:20:17,796]^;INFO^;224^;_internal.py^;_log()^; * Detected change in 'D:\\PycharmProjects\\DS_ML_Self\\BankingProject\\app.py', reloading
