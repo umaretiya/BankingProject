@@ -7,6 +7,7 @@ Create first flask classifciation  machine learning project
 ```{link of repo}
 [repo link](https://github.com/umaretiya)
 ```
+conda create -p venv python==3.7 -y
 
 XGBoost model for credit card default prediction : ML projects
 ### Buld docker image
