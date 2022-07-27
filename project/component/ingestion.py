@@ -96,7 +96,7 @@ class DataIngestion:
         except Exception as e:
             raise ProjectException(e, sys) from e 
         
-        
+
     def initiate_data_ingestion(self):
         try:
             tgz_file_path= self.download_project_data()

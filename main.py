@@ -12,7 +12,7 @@ from project.component.validation import DataValidation
 from project.component.transformation import DataTransformation
 from project.model.model_predictor import  ProjectData
 
-import os, json
+import os, json, pandas as pd
 
 app = Flask(__name__)
 
@@ -110,7 +110,8 @@ def predict():
     
     data_transformation = DataTransformation(data_transformation_config=transform, data_validation_artifact=data_validate_start,data_ingestion_artifact=data_ingested_start)
     data_transformation_start = data_transformation.initiate_data_transformation()
-   
+    trained_file = pd.read_csv(data_ingested_start.train_file_path)
+    X = trained_file.drop(labels=['default'], axis=1)
     prepro_obj = data_transformation.get_data_transformer_object() #call it
     
     train_arr = data_transformation_start.transformed_train_file_path
@@ -124,10 +125,11 @@ def predict():
     model_config_path = model_train.model_config_file_path
     model_factory = ModelFactory(model_config_path=model_config_path)
     initialized_model_list = model_factory.get_initialized_model_list()
+    
     lists_of_model = [initialized_model_list[0]._asdict()['model'].fit(X_train,y_train), initialized_model_list[0]._asdict()['model'].fit(X_train,y_train)]
     metric_info = evaluate_regression_model(model_list=lists_of_model,X_train=X_train,y_train=y_train, X_test=X_test,y_test=y_test,base_accuracy=0.4)
 
-    prepro_obj.fit_transform(X_train)
+    prepro_obj.fit_transform(X)
     project_model = ProjectEstimatorModel(preprocessing_object=prepro_obj, trained_model_object=metric_info.model_object)
 
     if request.method == 'POST':
@@ -189,7 +191,7 @@ def predict():
 
         print(f"-----project_df------>>>>{project_df}<<<<<<<<--------project_df ----")
         
-        project_df_sc = prepro_obj.fit_transform(project_df)
+        project_df_sc = prepro_obj.transform(project_df)
         default = project_model.predict(project_df_sc)
         context = {
             PROJECT_DATA_KEY: project_data.get_project_data_as_dict(),

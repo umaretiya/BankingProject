@@ -1,0 +1,29 @@
+[2022-07-27 13:13:59,376]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:13:59] "GET / HTTP/1.1" 200 -
+[2022-07-27 13:14:01,545]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:01] "GET / HTTP/1.1" 200 -
+[2022-07-27 13:14:02,248]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:02] "GET /artifact HTTP/1.1" 200 -
+[2022-07-27 13:14:03,273]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:03] "GET /artifact/project/artifact HTTP/1.1" 200 -
+[2022-07-27 13:14:04,218]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:04] "GET /artifact/project/artifact/data_ingestion HTTP/1.1" 200 -
+[2022-07-27 13:14:05,130]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:05] "GET /artifact/project/artifact/data_ingestion/2022-07-27-12-54-14 HTTP/1.1" 200 -
+[2022-07-27 13:14:05,920]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:05] "GET /artifact/project/artifact/data_ingestion/2022-07-27-12-54-14/ingested_data HTTP/1.1" 200 -
+[2022-07-27 13:14:06,595]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:06] "GET /artifact/project/artifact/data_ingestion/2022-07-27-12-54-14/ingested_data/test HTTP/1.1" 200 -
+[2022-07-27 13:14:08,673]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:08] "GET /artifact HTTP/1.1" 200 -
+[2022-07-27 13:14:09,658]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:09] "GET /artifact/project/artifact HTTP/1.1" 200 -
+[2022-07-27 13:14:10,399]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:10] "GET /artifact/project/artifact/data_transformation HTTP/1.1" 200 -
+[2022-07-27 13:14:11,323]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:11] "GET /artifact/project/artifact/data_transformation/2022-07-27-13-01-56 HTTP/1.1" 200 -
+[2022-07-27 13:14:12,798]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:12] "GET /artifact/project/artifact/data_transformation/2022-07-27-13-01-56/transformed_dir HTTP/1.1" 200 -
+[2022-07-27 13:14:13,847]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:13] "GET /artifact/project/artifact/data_transformation/2022-07-27-13-01-56/transformed_dir/train HTTP/1.1" 200 -
+[2022-07-27 13:14:19,771]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:19] "GET /artifact HTTP/1.1" 200 -
+[2022-07-27 13:14:24,156]^;INFO^;232^;__init__.py^;get_trainig_pipeline_config()^;Configuaraion: Training pipeline configured
+[2022-07-27 13:14:24,156]^;INFO^;19^;__init__.py^;__init__()^;Configuaraion initiated
+[2022-07-27 13:14:24,157]^;INFO^;60^;__init__.py^;get_data_ingestion_config()^;Configuaraion: Data ingestion_configured
+[2022-07-27 13:14:24,157]^;INFO^;94^;__init__.py^;get_data_validation_config()^;Configuaraion: Data validation configured
+[2022-07-27 13:14:24,157]^;INFO^;138^;__init__.py^;get_data_transformation_config()^;Configuaraion: Transformation configured
+[2022-07-27 13:14:24,157]^;INFO^;175^;__init__.py^;get_model_trainer_config()^;Configuaraion: Modeltrainign configured
+[2022-07-27 13:14:32,452]^;INFO^;42^;transformation.py^;get_data_transformer_object()^;Preprocessing object Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())]) configured
+[2022-07-27 13:14:32,988]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:32] "[35m[1mGET /predict HTTP/1.1[0m" 500 -
+[2022-07-27 13:14:33,646]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:33] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2022-07-27 13:14:33,660]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:33] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2022-07-27 13:14:33,814]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:33] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2022-07-27 13:14:34,225]^;INFO^;224^;_internal.py^;_log()^;127.0.0.1 - - [27/Jul/2022 13:14:34] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2022-07-27 13:14:51,670]^;INFO^;224^;_internal.py^;_log()^; * Detected change in 'D:\\PycharmProjects\\DS_ML_Self\\BankingProject\\main.py', reloading

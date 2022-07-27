@@ -14,6 +14,21 @@ XGBoost model for credit card default prediction : ML projects
 ```
 docker build -t <image name>:<tag name> .
 ```
+python -m pip install --upgrade pip'
+
+docker image build -t <flask_docker> . # credit_card
+docker run -p 5000:5000 -d <flask_docker> 
+docker login
+# renaming docker images
+docker tag flask_docker <your-docker-hub-username>/<flask-docker>
+
+docker push <your-docker-hub-username>/<flask-docker>
+
+heroku login
+docker login --username=<your-username> --password=<your-password>
+heroku create <app-name>
+heroku container:push web --app <app-name>
+heroku container:release web --app <app-name>
 > Note: imagename fro docker must be lowercase
 
 To list docker image

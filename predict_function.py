@@ -1,5 +1,5 @@
 
-import numpy as np
+import numpy as np, pandas as pd
 from typing import List
 
 from project.constant import CONFIG_FILE_PATH,CURRENT_TIME_STAMP
@@ -30,10 +30,12 @@ model_push= conf.get_model_pusher_config()
 
 data_ingested = DataIngestion(data_ingestion_config=ingest)
 data_ingested_start = data_ingested.initiate_data_ingestion()
-
+print(f"------trainfile path----<><><>{data_ingested_start.train_file_path}--------data_ingested_start.train_file_path------")
+trained_file = pd.read_csv(data_ingested_start.train_file_path)
+X = trained_file.drop(labels=['default'], axis=1)
 data_validate = DataValidation(data_ingestion_artifact=data_ingested_start, data_validation_config=validate)
 data_validate_start = data_validate.initiate_data_validation()
-
+print(X.columns.to_list())
 data_transformation = DataTransformation(data_transformation_config=transform, data_validation_artifact=data_validate_start,data_ingestion_artifact=data_ingested_start)
 data_transformation_start = data_transformation.initiate_data_transformation()
 
@@ -56,7 +58,7 @@ initialized_model_list = model_factory.get_initialized_model_list()
 lists_of_model = [initialized_model_list[0]._asdict()['model'].fit(X_train,y_train), initialized_model_list[0]._asdict()['model'].fit(X_train,y_train)]
 metric_info = evaluate_regression_model(model_list=lists_of_model,X_train=X_train,y_train=y_train, X_test=X_test,y_test=y_test,base_accuracy=0.4)
 
-prepro_obj.fit_transform(X_train)
+prepro_obj.fit_transform(X)
 project_model = ProjectEstimatorModel(preprocessing_object=prepro_obj, trained_model_object=metric_info.model_object)
 
 inputs = [28466.0,240000.0,2.0,1.0,1.0,40.0,-2.0,-2.0,-2.0,-2.0,-2.0,-2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
