@@ -1,4 +1,10 @@
 # This is a basic workflow to help you get started with Actions
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: bundle exec puma -C config/puma.rb
+
 
 name: CI
 
