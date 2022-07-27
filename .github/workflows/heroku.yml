@@ -16,6 +16,16 @@ jobs:
           email: ${{ secrets.HEROKU_EMAIL }} # your heroku email
           api_key: ${{ secrets.HEROKU_API_KEY }} # your  heroku api key
           app_name: ${{ secrets.HEROKU_APP_NAME }} # you aplication name
-          dockerfile_path: ./ # set the path to the folder wher the Dokerfile is located
-          options: Dockerfile # Docker Build Options
-          formation: web # Docker Dyno Formation. By default is web
+
+          dockerfile_directory: ./
+          # (Optional, default: "Dockerfile")
+          # Dockerfile name.
+          dockerfile_name: Dockerfile
+          # (Optional, default: "")
+          # Additional options of docker build command.
+          docker_options: "--no-cache"
+          # dockerfile_path: ./ # set the path to the folder wher the Dokerfile is located
+          #options: Dockerfile # Docker Build Options
+          #formation: web # Docker Dyno Formation. By default is web
+          # Warning: Unexpected input(s) 'dockerfile_path', 'options', 'formation', 
+          # valid inputs are ['email', 'api_key', 'app_name', 'dockerfile']
