@@ -38,6 +38,9 @@ heroku container:push web --app <app-name>
 heroku container:release web --app <app-name>
 > Note: imagename fro docker must be lowercase
 
+directory: 'D:\\PycharmProjects\\DS_ML_Self\\BankingProject\\project\\artifact\\model_trainer\\2022-07-27-13-14-55\\trained_model\\model.pkl']
+
+
 To list docker image
 ```
 docker images
