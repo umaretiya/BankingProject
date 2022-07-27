@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 from typing import List
 
 #Declaring variables for setup functions
-PROJECT_NAME="BankingProject-predictor"
+PROJECT_NAME="project-predictor"
 VERSION="0.0.3"
 AUTHOR="Keshav Umaretiya"
 DESRCIPTION="This is a  Machine Learning Project"

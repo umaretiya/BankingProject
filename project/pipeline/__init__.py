@@ -1,5 +1,3 @@
-from numpy import meshgrid
-from requests import head
 from project.logger import logging 
 from project.exception import ProjectException 
 

@@ -8,6 +8,7 @@ Create first flask classifciation  machine learning project
 [repo link](https://github.com/umaretiya)
 ```
 conda create -p venv python==3.7 -y
+ml-classify
 
 XGBoost model for credit card default prediction : ML projects
 ### Buld docker image
@@ -17,14 +18,19 @@ docker build -t <image name>:<tag name> .
 ```
 python -m pip install --upgrade pip'
 
-docker image build -t <flask_docker> . # credit_card
+docker image build -t <flask_docker> . # credit_card 756ea058aa15
 docker run -p 5000:5000 -d <flask_docker> 
+
+docker run -p 5000:5000 -e PORT=5000 756ea058aa15
+
+docker ps
+docker stop <container_id>
 docker login
 # renaming docker images
 docker tag flask_docker <your-docker-hub-username>/<flask-docker>
 
 docker push <your-docker-hub-username>/<flask-docker>
-
+docker images
 heroku login
 docker login --username=<your-username> --password=<your-password>
 heroku create <app-name>

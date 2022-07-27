@@ -1,11 +1,9 @@
-from tkinter.messagebox import NO
 from project.constant import ROOT_DIR
 from project.entity.config_entity import DataIngestionConfig 
 from project.entity.artifact_entity import DataIngestionArtifact 
 from project.logger import logging 
 from project.exception import ProjectException 
 import os, sys 
-import numpy as np  
 import pandas as pd 
 import shutil,zipfile
 from sklearn.model_selection import train_test_split
